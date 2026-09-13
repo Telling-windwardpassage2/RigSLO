@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install test deps
+        run: pip install pytest
+      - name: Run tests
+        run: pytest -q
+      - name: Smoke: CLI help + offline plan
+        run: |
+          python -m rigslo list-models > /dev/null
+          python -m rigslo plan --rig rtx-4090 --model llama3-8b --quant int4 --seq 8192

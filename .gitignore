@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+*.db
+*.sqlite3
+.DS_Store
+
+# offline demo artifacts (regenerate: python examples/demo.py)
+examples/
+
+# discarded files (never deleted — moved here)
+Deleted_files/

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rigslo"
+version = "0.1.0"
+description = "Inference capacity planner: will the model fit your rig, at what tok/s, SLOs, and power cost — analytical model plus live probe calibration."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Adithya N Raj", email = "adithyanraj03@gmail.com" }]
+keywords = ["llm", "inference", "vram", "slo", "gpu", "planning", "local-llm", "benchmarking"]
+dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+rigslo = "rigslo.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/adithyanraj03/RigSLO"
+
+[tool.setuptools.packages.find]
+include = ["rigslo*"]
