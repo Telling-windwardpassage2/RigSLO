@@ -185,10 +185,12 @@ CI: `.github/workflows/ci.yml` (Python 3.10 + 3.12, pytest + CLI smoke).
 
 ## Roadmap
 
-- [ ] NVML-based rig autodetection (optional extra, stays zero-dep by default)
-- [ ] Multi-GPU aggregate rigs (tensor/pipeline)
-- [ ] CSV/JSONL rig + model catalog imports
-- [ ] Historical calibration store (probe history → report annotations)
+Planned next, in order:
+
+1. **NVML-based rig autodetection** — optional extra, stays zero-dep by default
+2. **Multi-GPU aggregate rigs** — tensor/pipeline parallelism
+3. **CSV/JSONL catalog imports** — rig + model catalogs from files
+4. **Historical calibration store** — probe history → report annotations
 
 ## License
 
